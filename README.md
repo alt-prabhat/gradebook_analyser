@@ -2,10 +2,10 @@
 
 > Command-line gradebook assistant for quick mark analysis and reporting.
 
-## 📚 Project Overview
+## 1. Project Overview
 The script helps lecturers enter or import student marks, run core statistics, assign letter grades, and export a tidy report.
 
-## ✨ Features
+## 2. Features
 - **Two data entry modes** – type marks manually or import from a `.csv` file.
 - **Class statistics** – average, median, highest score (with student), and lowest score (with student).
 - **Automatic grading** – assigns letter grades (A–F) based on score thresholds.
@@ -14,7 +14,7 @@ The script helps lecturers enter or import student marks, run core statistics, a
 - **Tabbed summary table** – prints every student with marks and grade in a clean, tab-separated layout.
 - **Optional CSV export** – save the generated report to a new file directly from the CLI.
 
-## 🗂️ Repository Structure
+## 3. Repository Structure
 ```
 gradebook_analyser/
 ├── gradebook.py
@@ -22,7 +22,7 @@ gradebook_analyser/
 └── final_report.csv    # created when you export results (optional)
 ```
 
-## 🚀 Setup & Usage
+## 4. Setup & Usage
 1. **Download** or clone this repository.
 2. **Open a terminal** in the project folder:
    ```bash
@@ -47,7 +47,7 @@ Amit Patel,58
 ```
 Marks outside 0–100 or non-numeric values are skipped with a warning so you can fix them later.
 
-## 🧪 Sample Runs
+## 5. Sample Runs
 ```
 -----------------------------------------
 GradeBook Analyser by Prabhat Bhatia
@@ -210,7 +210,7 @@ Ending code.
 
 ```
 
-## 👤 Author & Course
+## 6. Author & Course
 - Prabhat Bhatia
 - 2501410006
 - B.Tech CSE Cyber Security(First Semester)
