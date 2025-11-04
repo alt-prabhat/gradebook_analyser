@@ -48,7 +48,6 @@ Amit Patel,58
 Marks outside 0–100 or non-numeric values are skipped with a warning so you can fix them later.
 
 ## 🧪 Sample Runs
-### 1. Manual Entry (5 Students)
 ```
 -----------------------------------------
 GradeBook Analyser by Prabhat Bhatia
@@ -64,34 +63,34 @@ Your choice (1, 2, or Q): 1
 
 Enter student name and marks (0-100).
 
-Enter student name: Alice
-Enter Alice's mark (0-100): 
-95
--> Added Alice with 95 marks.
+Enter student name: Prabhat Bhatia
+Enter Prabhat Bhatia's mark (0-100): 
+88
+-> Added Prabhat Bhatia with 88 marks.
 
 Do you want to enter more names? [Y/N]: y
-Enter student name: Bob
-Enter Bob's mark (0-100): 
-82
--> Added Bob with 82 marks.
+Enter student name: Suhani Yadav
+Enter Suhani Yadav's mark (0-100): 
+99
+-> Added Suhani Yadav with 99 marks.
 
 Do you want to enter more names? [Y/N]: y
-Enter student name: Charlie
-Enter Charlie's mark (0-100): 
-78
--> Added Charlie with 78 marks.
+Enter student name: Aayan Srivastwa
+Enter Aayan Srivastwa's mark (0-100): 
+58
+-> Added Aayan Srivastwa with 58 marks.
 
 Do you want to enter more names? [Y/N]: y
-Enter student name: David
-Enter David's mark (0-100): 
-55
--> Added David with 55 marks.
+Enter student name: Kumar Partha
+Enter Kumar Partha's mark (0-100): 
+72
+-> Added Kumar Partha with 72 marks.
 
 Do you want to enter more names? [Y/N]: y
-Enter student name: Emily
-Enter Emily's mark (0-100): 
-32
--> Added Emily with 32 marks.
+Enter student name: Aradhya Mathur
+Enter Aradhya Mathur's mark (0-100): 
+35
+-> Added Aradhya Mathur with 35 marks.
 
 Do you want to enter more names? [Y/N]: n
 
@@ -99,10 +98,10 @@ Manual entry complete. 5 students recorded.
 
 -- Class Statistics --
 Total Students:   5
-Average Score:    68.4
-Median Score:     78
-Highest Score:    95 (by Alice)
-Lowest Score:     32 (by Emily)
+Average Score:    70.4
+Median Score:     72
+Highest Score:    99 (by Suhani Yadav)
+Lowest Score:     35 (by Aradhya Mathur)
 Letter grades have been assigned.
 
 -- Grade Distribution --
@@ -114,19 +113,19 @@ Grade F: 1 student(s)
 
 -- Pass/Fail Analysis (Passing = 40) --
 Total Passed: 4
-Students: Alice, Bob, Charlie, David
+Students: Prabhat Bhatia, Suhani Yadav, Aayan Srivastwa, Kumar Partha
 
 Total Failed: 1
-Students: Emily
+Students: Aradhya Mathur
 
 -- Full Student Report --
-Name	Marks	Grade
+Name    Marks   Grade
 --------------------------
-Alice	95	A
-Bob	82	B
-Charlie	78	C
-David	55	D
-Emily	32	F
+Prabhat Bhatia   88  B
+Suhani Yadav     99  A
+Aayan Srivastwa  58  D
+Kumar Partha     72  C
+Aradhya Mathur   35  F
 --------------------------
 
 Would you like to export this full report to a CSV file? (y/n): n
@@ -142,16 +141,12 @@ Ending code.
 **Sample file:**
 ```csv
 Name,Mark
-Rohan Kumar,88
-Priya Sharma,92
-Amit Patel,58
-Sneha Reddy,72
-Vihan Singh,35
-Ananya Joshi,99
-Aditya Rao,79
-Dev Mehra,60
-Isha Verma,81
-Kabir Gupta,40
+Prabhat Bhatia,88
+Suhani Yadav,99
+Aayan Srivastwa,58
+Kumar Partha,72
+Aradhya Mathur,35
+
 ```
 
 **Program output:**
@@ -169,43 +164,38 @@ Your choice (1, 2, or Q): 2
 =>CSV Data Import
 Enter the name of the csv file: students.csv
 
-CSV import complete. 10 students loaded from 'students.csv'.
+CSV import complete. 5 students loaded from 'students.csv'.
 
 -- Class Statistics --
-Total Students:   10
+Total Students:   5
 Average Score:    70.4
-Median Score:     75.5
-Highest Score:    99 (by Ananya Joshi)
-Lowest Score:     35 (by Vihan Singh)
+Median Score:     72
+Highest Score:    99 (by Suhani Yadav)
+Lowest Score:     35 (by Aradhya Mathur)
 Letter grades have been assigned.
 
 -- Grade Distribution --
-Grade A: 2 student(s)
-Grade B: 2 student(s)
-Grade C: 2 student(s)
-Grade D: 2 student(s)
-Grade F: 2 student(s)
+Grade A: 1 student(s)
+Grade B: 1 student(s)
+Grade C: 1 student(s)
+Grade D: 1 student(s)
+Grade F: 1 student(s)
 
 -- Pass/Fail Analysis (Passing = 40) --
-Total Passed: 9
-Students: Rohan Kumar, Priya Sharma, Amit Patel, Sneha Reddy, Ananya Joshi, Aditya Rao, Dev Mehra, Isha Verma, Kabir Gupta
+Total Passed: 4
+Students: Prabhat Bhatia, Suhani Yadav, Aayan Srivastwa, Kumar Partha
 
 Total Failed: 1
-Students: Vihan Singh
+Students: Aradhya Mathur
 
 -- Full Student Report --
-Name	Marks	Grade
+Name    Marks   Grade
 --------------------------
-Aditya Rao	79	C
-Amit Patel	58	D
-Ananya Joshi	99	A
-Dev Mehra	60	D
-Isha Verma	81	B
-Kabir Gupta	40	F
-Priya Sharma	92	A
-Rohan Kumar	88	B
-Sneha Reddy	72	C
-Vihan Singh	35	F
+Prabhat Bhatia   88  B
+Suhani Yadav     99  A
+Aayan Srivastwa  58  D
+Kumar Partha     72  C
+Aradhya Mathur   35  F
 --------------------------
 
 Would you like to export this full report to a CSV file? (y/n): y
@@ -217,11 +207,12 @@ Success! Report exported to 'final_report.csv'
 Do you want to repeat the process? (y/n): n
 
 Ending code.
+
 ```
 
 ## 👤 Author & Course
 - Prabhat Bhatia
 - 2501410006
 - B.Tech CSE Cyber Security(First Semester)
-- 6th October 2025
+- 4th November 2025
 - Programming With Python - Lab Assignment 2
